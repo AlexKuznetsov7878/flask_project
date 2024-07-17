@@ -9,7 +9,7 @@
     <ul>
         {% for user in users %}
             <li>
-                <p>Username: {{ user.username }}</p>
+                <p>name: {{ user.username }}</p>
                 <p>Email: {{ user.email }}</p>
                 {% if user.image_filename %}
                     <img src="{{ url_for('static', filename=user.image_filename) }}" alt="{{ user.username }}" style="width: 100px;">
